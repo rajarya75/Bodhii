@@ -4,7 +4,7 @@ $secondary: #29381A;
 $error: #e74c3c;
 $background: #F5E9D9;
 $white: #fff;
-$text: #475569;
+$textLight: #F3E9DB;
 
 // fonts
 @font-face {
@@ -91,19 +91,21 @@ body {
 }
 
 .head {
-    text-align: center;
 
     h2 {
-        font-size: 40px;
-        font-weight: 900;
+        font-size: 48px;
+        font-weight: 400;
         color: $secondary;
-        padding-bottom: 6px;
+        text-transform: uppercase;
+        margin-bottom: .7rem;
     }
 
     p {
-        font-size: 22px;
+        font-size: 24px;
         color: $secondary;
         line-height: 34px;
+        font-weight: 700;
+        margin-bottom: 5px;
     }
 
 }
@@ -215,25 +217,59 @@ body {
     }
 }
 
-// connectivity
-.connectivity {
-    padding-top: 80px;
-    padding-bottom: 100px;
-    background-size: cover;
-    position: relative;
+// Advantages
+.advantages {
+    padding-top: 120px;
+    padding-bottom: 120px;
 
     .head {
-        text-align: left;
+        margin-top: 80px;
+    }
+
+    ul {
+        margin-top: 40px;
+
+        li {
+            font-size: 20px;
+            font-weight: 500;
+            color: $secondary;
+            padding-bottom: 14px;
+        }
+    }
+}
+
+// Legacy
+.legacy {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-image: url(/images/about-bg.png);
+
+    .head {
+        padding-left: 40px;
+
+        h2,
+        p {
+            color: #F3E9DB;
+        }
     }
 
     .accordion {
+        padding-left: 40px;
+        margin-top: 40px;
+        color: $textLight;
+
         .accordion-item {
             border: 0px;
-            border-bottom: 1px solid #CE9145;
+
+            background: transparent;
 
             .accordion-button {
-                font-weight: 600;
-                font-size: 18px;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 28px;
+                background: transparent;
+                color: $textLight;
+                border-bottom: 1px solid #C39533;
             }
 
             .accordion-button:not(.collapsed) {
@@ -247,15 +283,11 @@ body {
             }
 
             .accordion-body {
-                margin-top: -10px;
-                margin-bottom: -10px;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 28px;
 
-                ul {
-                    li {
-                        color: #818680;
-                        margin-bottom: 5px;
-                    }
-                }
+
             }
 
         }

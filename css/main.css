@@ -76,19 +76,19 @@ body {
   color: #dfdfdf;
 }
 
-.head {
-  text-align: center;
-}
 .head h2 {
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 48px;
+  font-weight: 400;
   color: #29381A;
-  padding-bottom: 6px;
+  text-transform: uppercase;
+  margin-bottom: 0.7rem;
 }
 .head p {
-  font-size: 22px;
+  font-size: 24px;
   color: #29381A;
   line-height: 34px;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
 .humberger {
@@ -174,38 +174,64 @@ body {
   text-align: justify;
 }
 
-.connectivity {
-  padding-top: 80px;
-  padding-bottom: 100px;
-  background-size: cover;
-  position: relative;
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
-.connectivity .head {
-  text-align: left;
+.advantages .head {
+  margin-top: 80px;
 }
-.connectivity .accordion .accordion-item {
+.advantages ul {
+  margin-top: 40px;
+}
+.advantages ul li {
+  font-size: 20px;
+  font-weight: 500;
+  color: #29381A;
+  padding-bottom: 14px;
+}
+
+.legacy {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-image: url(/images/about-bg.png);
+}
+.legacy .head {
+  padding-left: 40px;
+}
+.legacy .head h2,
+.legacy .head p {
+  color: #F3E9DB;
+}
+.legacy .accordion {
+  padding-left: 40px;
+  margin-top: 40px;
+  color: #F3E9DB;
+}
+.legacy .accordion .accordion-item {
   border: 0px;
-  border-bottom: 1px solid #CE9145;
+  background: transparent;
 }
-.connectivity .accordion .accordion-item .accordion-button {
-  font-weight: 600;
-  font-size: 18px;
+.legacy .accordion .accordion-item .accordion-button {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  background: transparent;
+  color: #F3E9DB;
+  border-bottom: 1px solid #C39533;
 }
-.connectivity .accordion .accordion-item .accordion-button:not(.collapsed) {
+.legacy .accordion .accordion-item .accordion-button:not(.collapsed) {
   background: none;
   color: inherit;
 }
-.connectivity .accordion .accordion-item .accordion-button:focus {
+.legacy .accordion .accordion-item .accordion-button:focus {
   border-color: none;
   box-shadow: none;
 }
-.connectivity .accordion .accordion-item .accordion-body {
-  margin-top: -10px;
-  margin-bottom: -10px;
-}
-.connectivity .accordion .accordion-item .accordion-body ul li {
-  color: #818680;
-  margin-bottom: 5px;
+.legacy .accordion .accordion-item .accordion-body {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
 }
 
 .amenities {
