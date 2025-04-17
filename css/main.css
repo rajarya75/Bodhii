@@ -142,7 +142,7 @@ body {
   margin-top: 60px;
   padding-top: 120px;
   padding-bottom: 120px;
-  background-image: url(/images/about-bg.png);
+  background-image: url(../images/about-bg.png);
 }
 .about h2 {
   font-size: 48px;
@@ -194,7 +194,7 @@ body {
 .legacy {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-image: url(/images/about-bg.png);
+  background-image: url(../images/about-bg.png);
 }
 .legacy .head {
   padding-left: 40px;
@@ -222,10 +222,10 @@ body {
   font-family: lexend;
 }
 .legacy .accordion .accordion-item .accordion-button:not(.collapsed)::after {
-  background-image: url(/images/minus.png);
+  background-image: url(../images/minus.png);
 }
 .legacy .accordion .accordion-item .accordion-button::after {
-  background-image: url(/images/plus.png);
+  background-image: url(../images/plus.png);
 }
 .legacy .accordion .accordion-item .accordion-button:focus {
   border-color: none;
@@ -320,7 +320,7 @@ body {
 .masterplan {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-image: url(/images/about-bg.png);
+  background-image: url(../images/about-bg.png);
 }
 .masterplan .display-center {
   display: flex;
@@ -363,7 +363,7 @@ body {
 .gallery {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-image: url(/images/about-bg.png);
+  background-image: url(../images/about-bg.png);
 }
 .gallery .head {
   padding-bottom: 40px;
