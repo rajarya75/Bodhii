@@ -156,7 +156,7 @@ body.sticky {
 
 .home .home-info {
   text-align: center;
-  padding-top: 60px;
+  padding-top: 20px;
 }
 .home .home-info .box {
   margin-bottom: 30px;
@@ -971,7 +971,7 @@ body.sticky {
   width: 500px;
   height: 100%;
   background-color: #F5E9D9;
-  z-index: 1001;
+  z-index: 1009;
   transition: right 0.3s ease;
   box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
 }
