@@ -480,14 +480,15 @@ body {
     }
 
     .gallery-item {
-        img {
-            height: 100%;
+        img.img-fluid {
+            height: 90%;
+            width: 100%;
             object-fit: cover;
         }
 
         .col-md-5,
         .col-md-7 {
-            margin-bottom: 20px;
+            margin-bottom: -20px;
         }
     }
 
@@ -495,6 +496,7 @@ body {
         font-size: 16px;
         color: $white;
         text-align: right;
+        margin-top: -20px;
     }
 }
 
@@ -580,6 +582,12 @@ body {
             padding-top: 10px;
         }
 
+        ul li {
+            color: $textLight;
+            font-size: 14px;
+            padding-top: 10px;
+        }
+
         a {
             color: #F5E9D9;
             font-size: 14px;
@@ -589,6 +597,10 @@ body {
             padding-top: 10px;
             text-decoration: none;
             display: inline-block;
+
+            &:hover {
+                color: $textLight;
+            }
         }
     }
 
@@ -599,38 +611,27 @@ body {
         align-items: center;
         padding-top: 10px;
         padding-bottom: 10px;
+        font-size: 14px;
 
         .left {
 
             p {
                 padding-top: 10px;
-                color: $white;
-
-                a {
-                    text-decoration: none;
-                    color: $white;
-                    font-weight: 600;
-
-                    &:hover {
-                        color: $primary;
-                    }
-
-                    img {
-                        margin-top: -3px;
-                        margin-right: 5px;
-                    }
-                }
+                color: #F3E9DB;
+                font-weight: 300;
             }
         }
 
         .right {
             p {
-                color: $white;
+                color: #F3E9DB;
                 padding-top: 10px;
+                font-weight: 300;
 
                 a {
                     text-decoration: none;
-                    color: $white;
+                    color: #F3E9DB;
+                    font-weight: 300;
                 }
             }
         }
@@ -877,7 +878,8 @@ body {
     }
 
     .about-bg {
-        display: none;
+        // display: none;
+        margin-bottom: 20px;
     }
 
     .advantages {
@@ -1076,6 +1078,12 @@ body {
 
         img {
             max-width: 100px;
+        }
+
+        ul li {
+            display: inline-block;
+            margin-left: -10px;
+            ;
         }
     }
 
