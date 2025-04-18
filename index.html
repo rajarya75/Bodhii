@@ -547,6 +547,27 @@
                         <h2>Enquire Now</h2>
                         <img src="images/line.png" class="img-fluid" alt="">
                     </div>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="message" name="message" rows="3"
+                                placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-mjr">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -616,6 +637,61 @@
             menuItems.forEach(item => {
                 item.addEventListener('click', () => {
                     toggleDrawer();
+                });
+            });
+
+            // Contact Form Submission
+            $('#contactForm').on('submit', function (e) {
+                e.preventDefault();
+
+                // Form validation
+                const name = $('#name').val();
+                const mobile = $('#mobile').val();
+                const email = $('#email').val();
+                const message = $('#message').val();
+
+                if (!name || !mobile || !email || !message) {
+                    alert('Please fill in all fields');
+                    return;
+                }
+
+                // Email validation
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    alert('Please enter a valid email address');
+                    return;
+                }
+
+                // Mobile validation
+                const mobileRegex = /^[0-9]{10}$/;
+                if (!mobileRegex.test(mobile)) {
+                    alert('Please enter a valid 10-digit mobile number');
+                    return;
+                }
+
+                // Create form data
+                const formData = {
+                    name: name,
+                    mobile: mobile,
+                    email: email,
+                    message: message
+                };
+
+                // Send form data to email
+                $.ajax({
+                    url: 'https://formspree.io/f/xjkyqrde', // Replace with your Formspree endpoint
+                    method: 'POST',
+                    data: formData,
+                    dataType: 'json',
+                    success: function (response) {
+                        // Close modal
+                        $('#leadModal').modal('hide');
+                        // Redirect to thank you page
+                        window.location.href = 'thank-you.html';
+                    },
+                    error: function (error) {
+                        alert('There was an error submitting the form. Please try again.');
+                    }
                 });
             });
         });
