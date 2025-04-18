@@ -25,6 +25,12 @@ body {
   font-family: "Lexend", sans-serif;
   overflow-x: hidden;
   background-color: #F5E9D9;
+  padding-top: 80px;
+  transition: padding-top 0.3s ease;
+}
+html.sticky,
+body.sticky {
+  padding-top: 60px;
 }
 
 .btn-mjr {
@@ -105,8 +111,29 @@ body {
 }
 
 .header-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background: #F5E9D9;
   box-shadow: -400px 0px 112px 0px color(display-p3 0 0.1804 0.0784/0), -256px 0px 102px 0px color(display-p3 0 0.1804 0.0784/0.03), -144px 0px 86px 0px color(display-p3 0 0.1804 0.0784/0.1);
+  z-index: 1002;
+  transition: all 0.3s ease;
+}
+.header-top.sticky {
+  height: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.header-top.sticky .header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.header-top.sticky .header .logo img {
+  max-width: 90px;
+}
+.header-top.sticky .header .humberger img {
+  width: 24px;
+  margin-top: -5px;
 }
 .header-top .header {
   display: flex;
@@ -114,14 +141,17 @@ body {
   align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  transition: all 0.3s ease;
 }
 .header-top .header .logo img {
   max-width: 205px;
   height: auto;
+  transition: all 0.3s ease;
 }
 .header-top .header .humberger img {
   width: 30px;
   height: auto;
+  transition: all 0.3s ease;
 }
 
 .home .home-info {
@@ -630,8 +660,20 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .header-top.sticky {
+    height: 50px;
+  }
+  .header-top.sticky .header .logo img {
+    max-width: 120px;
+  }
   .header-top .header .logo img {
     max-width: 150px;
+  }
+  body {
+    padding-top: 70px;
+  }
+  body.sticky {
+    padding-top: 50px;
   }
   .download-brochure {
     padding: 2px 12px;
@@ -921,8 +963,8 @@ body {
 .right-drawer {
   position: fixed;
   top: 0;
-  right: -400px;
-  width: 400px;
+  right: -500px;
+  width: 500px;
   height: 100%;
   background-color: #F5E9D9;
   z-index: 1001;
@@ -967,11 +1009,11 @@ body {
 }
 .right-drawer .drawer-menu li a {
   color: #29381A;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 500;
   text-decoration: none;
   display: block;
-  padding: 10px 0;
+  padding: 5px 10px;
   transition: color 0.3s ease;
 }
 .right-drawer .drawer-menu li a:hover {
@@ -983,4 +1025,13 @@ body {
 }
 .right-drawer .drawer-footer .btn-mjr {
   width: 100%;
+}
+@media (max-width: 768px) {
+  .right-drawer {
+    right: -350px;
+    width: 350px;
+  }
+  .right-drawer .drawer-menu li a {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=main.css.map */

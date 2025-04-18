@@ -31,29 +31,19 @@
     <!-- Aos animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-KSMWPCG2');</script>
-    <!-- End Google Tag Manager -->
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KSMWPCG2" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <!-- Header -->
-    <div class="container">
-        <header class="header">
-            <div class="logo"><a href="/"><img src="images/logo.png" alt=""></a></div>
-            <div class="humberger"><img src="images/humberger.png" alt=""></div>
-        </header>
+    <div class="header-top">
+        <div class="container">
+            <header class="header">
+                <div class="logo"><a href="/"><img src="images/logo.png" alt=""></a></div>
+                <div class="humberger" id="hamburger">
+                    <img src="images/humberger.png" alt="">
+                </div>
+            </header>
+        </div>
     </div>
     <!-- Home -->
     <section class="policy">
@@ -144,16 +134,20 @@
                     </div>
                     <div class="col-md-5">
                         <div class="label">address</div>
-                        <p>Thavarekere Village, Nandagudi Hobli,<br /> Hosakote, Bangalore Rural District,</br />
-                            Karnataka, India, 562122</p>
-                        <div class="label">phone number</div>
-                        <a href="tel:+91123456789">+91 12345 6789</a>
+                        <p>Located on Bengaluru - Tirupati HWY - NH-75,<br /> Diagonally Opposite the Volvo
+                            Manufacturing Hub</p>
+                        <!-- <div class="label">phone number</div>
+                        <a href="tel:+91123456789">+91 12345 6789</a> -->
                     </div>
                     <div class="col-md-3">
                         <div class="label">RERA Number</div>
                         <p>EX/PRM/KA/RERA/1250/304/PR/250315/006723</p>
                         <div class="label">Terms and Conditions</div>
-                        <a href="tel:+91123456789">Terms and Conditions Apply</a>
+                        <ul>
+                            <li>Terms and Conditions Apply</li>
+                        </ul>
+                        <div><a class="label" href="/privacy-policy.html">Privacy Policy</a></div>
+                        <div><a class="label" href="/disclaimer.html">Disclaimer</a></div>
                     </div>
                 </div>
             </div>
@@ -162,7 +156,8 @@
                     <p> © All Rights Reserved. </p>
                 </div>
                 <div class="right">
-                    <p>Designed And Developed By : <a href="https://modtraa.com/" target="_blank">Modtraa</a></p>
+                    <p>Designed And Developed By : <a href="https://modtraa.com/" target="_blank"><img
+                                src="images/modtraa.png" alt="" width="24" /> Modtraa</a></p>
                 </div>
             </div>
         </div>
