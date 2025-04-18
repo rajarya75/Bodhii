@@ -256,6 +256,10 @@ body {
   border-bottom: 1px solid #29381A;
   width: 70%;
 }
+.amenities .slick-slide img.img-fluid {
+  max-width: 92%;
+  height: auto;
+}
 .amenities .slick-prev,
 .amenities .slick-next {
   top: -150px;
@@ -615,10 +619,7 @@ body {
   }
 }
 @media (max-width: 768px) {
-  .header {
-    height: 60px;
-  }
-  .header .logo img {
+  .header-top .header .logo img {
     max-width: 150px;
   }
   .download-brochure {
@@ -645,9 +646,9 @@ body {
     background-repeat: no-repeat;
   }
   .about {
-    margin-top: 60px;
+    margin-top: 0;
     margin-bottom: 0px;
-    padding-top: 0;
+    padding-top: 60px;
     padding-bottom: 70px;
   }
   .about p {
@@ -659,39 +660,38 @@ body {
     line-height: 32px;
     margin-top: 10px;
   }
+  .about h6 {
+    font-size: 14px;
+  }
   .about-bg {
     display: none;
   }
-  .configuration {
-    padding-top: 60px;
+  .advantages {
+    padding-top: 0px;
     padding-bottom: 60px;
   }
-  .configuration .conf {
-    margin-bottom: 15px;
+  .advantages ul li {
+    font-size: 16px;
+  }
+  .legacy {
+    padding-top: 20px;
+  }
+  .legacy .head {
+    padding-left: 0;
+    padding-top: 30px;
+  }
+  .legacy .accordion {
+    padding-left: 0;
+  }
+  .legacy .accordion .accordion-item .accordion-body {
+    font-size: 16px;
   }
   .head h2 {
     font-size: 30px;
   }
-  .highlight {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  .highlight .head p {
-    font-size: 16px;
-    line-height: 20px;
-  }
-  .highlight .parent-tab .nav.nav-tabs .nav-link {
-    padding: 10px 30px;
-  }
-  .highlight .parent-tab .child-tab .nav .nav-item .nav-link {
-    font-size: 12px;
-    padding: 8px 20px;
-  }
-  .highlight .parent-tab .child-tab .tab-content .bhk-box {
-    margin-bottom: 30px;
-  }
-  .highlight .parent-tab .bhk-img img {
-    padding: 0;
+  .head p {
+    font-size: 18px;
+    line-height: 28px;
   }
   .project {
     padding-top: 60px;
@@ -724,29 +724,101 @@ body {
   .amenities .head p {
     font-size: 16px;
   }
+  .amenities .line {
+    display: none;
+  }
+  .amenities .slick-prev,
+  .amenities .slick-next {
+    top: -110px;
+  }
+  .amenities .slick-prev img,
+  .amenities .slick-next img {
+    width: 40px;
+  }
+  .amenities .slick-prev {
+    right: 110px;
+  }
+  .amenities .slick-slide img.img-fluid {
+    max-width: 95%;
+  }
   .amenities .amenities-box .a-item p {
     font-size: 14px;
   }
+  .masterplan .head button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .growth {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .growth .head h2 {
+    font-size: 30px;
+  }
+  .growth .head button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  br {
+    display: none;
+  }
+  .gallery .head h2 {
+    font-size: 30px;
+  }
   .amenities .amenities-box .col-md-4 {
     width: 48%;
+  }
+  .investment .head {
+    padding-left: 0;
+    padding-top: 30px;
+  }
+  .investment .accordion {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  .investment .accordion .accordion-item .accordion-body {
+    font-size: 16px;
+  }
+  .investment {
+    padding-bottom: 70px;
+  }
+  .masterplan {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .masterplan .head h2 {
+    font-size: 30px;
   }
   .location .path img {
     max-width: 100%;
     margin-bottom: 30px;
   }
+  .location .contact {
+    padding: 20px;
+  }
+  .location .contact h5 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
   .footer {
     text-align: center;
-    padding: 30px 10px;
-    background-color: #F5E9D9;
+    padding: 20px 10px;
   }
   .footer .footer-top {
     flex-wrap: wrap;
+    padding-top: 20px;
+  }
+  .footer .footer-top img {
+    max-width: 100px;
   }
   .footer .footer-top .left {
     width: 100%;
   }
   .footer .footer-bottom .left {
     flex-direction: column;
+  }
+  .footer .footer-bottom .left p {
+    margin-bottom: 0;
   }
   .footer .footer-top .right {
     width: 100%;
