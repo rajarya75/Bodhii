@@ -38,18 +38,46 @@
         <div class="container">
             <header class="header">
                 <div class="logo"><a href="/"><img src="images/logo.png" alt=""></a></div>
-                <div class="humberger" data-bs-toggle="modal" data-bs-target="#leadModal"><img
-                        src="images/humberger.png" alt=""></div>
+                <div class="humberger" id="hamburger">
+                    <img src="images/humberger.png" alt="">
+                </div>
             </header>
+        </div>
+    </div>
+    <!-- Right Side Drawer -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="right-drawer" id="rightDrawer">
+        <div class="drawer-header">
+            <div class="logo"><a href="/"><img src="images/logo.png" alt=""></a></div>
+            <div class="close-drawer" id="closeDrawer">
+                <img src="images/close.webp" alt="Close" style="opacity: .5;">
+            </div>
+        </div>
+        <div class="drawer-content">
+            <ul class="drawer-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Project Highlights</a></li>
+                <li><a href="#advantages">Location Map</a></li>
+                <li><a href="#legacy">Location Highlights</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#investment">Neo Bangalore as an Investment</a></li>
+                <li><a href="#masterplan">Masterplan</a></li>
+                <li><a href="#growth">Fastest Future Growth Curve</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#location">Site Address</a></li>
+            </ul>
+            <div class="drawer-footer">
+                <a href="tel:+919900088682" class="btn btn-mjr">Enquire Now</a>
+            </div>
         </div>
     </div>
     <!-- Home -->
     <!-- <div class="download-brochure" data-bs-toggle="modal" data-bs-target="#leadModal">Download Brochure</div> -->
-    <section class="home">
+    <section class="home" id="home">
         <div class="container">
             <div class="home-info">
                 <div class="box">
-                    <h1 data-aos="fade-up" data-aos-duration="1000">Hoskote AKA Neo Bengaluru’s Best Villa Plots</h1>
+                    <h1 data-aos="fade-up" data-aos-duration="1000">Hoskote AKA Neo Bengaluru's Best Villa Plots</h1>
                     <p data-aos="fade-up" data-aos-duration="2000">High Demand Premium Investor Units at Special Rate
                         for Limited Time</p>
                     <!-- <button data-aos="fade-up" data-aos-duration="3000" class="btn btn-mjr" data-bs-toggle="modal"
@@ -64,7 +92,7 @@
         </div>
     </section>
     <!-- About -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-7">
@@ -79,7 +107,7 @@
                         <h2 data-aos="fade-up" data-aos-duration="1000">Money Plant For <br />Generations To Come</h2>
                         <div><img src="images/line.png" alt=""></div>
                         <p data-aos="fade-up" data-aos-duration="2000">Bodhii Tree offers premium villa plots adjacent
-                            to <br /> Bengaluru-Tirupatgi Highway - NH - 75, one of Neo <br /> Bengaluru’s
+                            to <br /> Bengaluru-Tirupatgi Highway - NH - 75, one of Neo <br /> Bengaluru's
                             fastest-growing investment zones.</p>
                         <div data-aos="fade-up" data-aos-duration="2000">
                             <h6>East and West-facing Plots <br /> 7 Acres & 9 Guntas<br /> 63 Premium Investor
@@ -98,7 +126,7 @@
         </div>
     </section>
     <!-- Advantages -->
-    <section class="advantages">
+    <section class="advantages" id="advantages">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -127,7 +155,7 @@
         </div>
     </section>
     <!-- connectivity -->
-    <section class="legacy">
+    <section class="legacy" id="legacy">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -207,9 +235,9 @@
                             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Located in Neo Bengaluru’s booming industrial belt—surrounded by Volvo, Honda,
+                                    <p>Located in Neo Bengaluru's booming industrial belt—surrounded by Volvo, Honda,
                                         Bando, 200+ industries, and the Multi-Modal Logistics Park. With IT zones and
-                                        SEZs taking shape, it’s a future-proof investment.</p>
+                                        SEZs taking shape, it's a future-proof investment.</p>
                                 </div>
                             </div>
                         </div>
@@ -219,7 +247,7 @@
         </div>
     </section>
     <!-- Amenities -->
-    <section class="amenities">
+    <section class="amenities" id="amenities">
         <div class="container">
             <div class="slider-head">
                 <div class="head" data-aos="fade-up" data-aos-duration="1000">
@@ -270,7 +298,7 @@
         </div>
     </section>
     <!-- Investment -->
-    <section class="investment">
+    <section class="investment" id="investment">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -293,7 +321,7 @@
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample1">
                                 <div class="accordion-body">
-                                    <p>The area’s fast-developing infrastructure makes it ripe for future rental income.
+                                    <p>The area's fast-developing infrastructure makes it ripe for future rental income.
                                         With Neo Bengaluru attracting industrial parks, logistics zones, and tech hubs,
                                         the demand for built-to-rent homes will skyrocket. Build a second home or a
                                         simple rental setup later, and let your plot pay you back—month after month.</p>
@@ -310,7 +338,7 @@
                                 data-bs-parent="#accordionExample1">
                                 <div class="accordion-body">
                                     <p>When Volvo, STRR, NH-75, and the Multi-Modal Logistics Park show up on the
-                                        map—you know demand is not a “maybe,” it’s a “when.” The strategic location near
+                                        map—you know demand is not a "maybe," it's a "when." The strategic location near
                                         Hoskote Extension puts Bodhii Tree right in the path of Bengaluru's eastward
                                         growth wave. Buy now before the rush. Later, buyers will be chasing the very
                                         plots you're holding.</p>
@@ -328,9 +356,9 @@
                                 data-bs-parent="#accordionExample1">
                                 <div class="accordion-body">
                                     <p>With over 200 industries nearby and a strong government push towards this
-                                        corridor, Bodhii Tree isn’t just land—it’s part of a growth economy. And unlike
-                                        built properties, land doesn’t age. It just keeps gaining value. And this isn’t
-                                        speculation—it’s backed by location, infrastructure, and momentum.</p>
+                                        corridor, Bodhii Tree isn't just land—it's part of a growth economy. And unlike
+                                        built properties, land doesn't age. It just keeps gaining value. And this isn't
+                                        speculation—it's backed by location, infrastructure, and momentum.</p>
                                 </div>
                             </div>
                         </div>
@@ -345,7 +373,7 @@
         </div>
     </section>
     <!-- masterplan -->
-    <section class="masterplan">
+    <section class="masterplan" id="masterplan">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -368,7 +396,7 @@
         </div>
     </section>
     <!-- Growth  -->
-    <section class="growth">
+    <section class="growth" id="growth">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -395,11 +423,11 @@
         </div>
     </section>
     <!-- Gallery -->
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <div class="container">
             <div class="head">
                 <h2>Gallery</h2>
-                <p>Hoskote AKA Neo Bengaluru’s Best Villa Plots</p>
+                <p>Hoskote AKA Neo Bengaluru's Best Villa Plots</p>
                 <div><img src="images/line1.png" alt=""></div>
             </div>
             <div class="row gallery-item">
@@ -420,15 +448,15 @@
         </div>
     </section>
     <!-- Locationo -->
-    <section class="location">
+    <section class="location" id="location">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="head">
                         <h2>The land that keeps on giving—<br /> today, tomorrow, always.</h2>
                         <img src="images/line1.png" alt="">
-                        <p>If you’ve been waiting for the “right land at the right price” moment—this is it.<br /> If
-                            you’ve been looking to start a legacy that pays forward—this is it.<br /> If you believe in
+                        <p>If you've been waiting for the "right land at the right price" moment—this is it.<br /> If
+                            you've been looking to start a legacy that pays forward—this is it.<br /> If you believe in
                             growth you can see and value you can pass on—this is it.</p>
                     </div>
                     <div class="map">
@@ -441,7 +469,7 @@
                 <div class="col-md-1"></div>
                 <div class="col-md-5">
                     <div class="contact">
-                        <h5>Everything’s heading here.<br /> So should you.</h5>
+                        <h5>Everything's heading here.<br /> So should you.</h5>
                         <h6>Existing Growth Drivers</h6>
                         <ul>
                             <li>Volvo Manufacturing Hub - Global industry, next door to your plot.</li>
@@ -500,7 +528,7 @@
                     <p> © All Rights Reserved. </p>
                 </div>
                 <div class="right">
-                    <p>Designed And Developed By : <a href="https://modtraa.com/" target="_blank"><img
+                    <p>Designed And Developed By : <a href="https://modtraa.com/" target="_blank"><img
                                 src="images/modtraa.png" alt="" width="24" /> Modtraa</a></p>
                 </div>
             </div>
@@ -538,7 +566,7 @@
         $(document).ready(function () {
             $('.amenitiesSlider').slick({
                 infinite: false,
-                slidesToShow: 3.5, // Show 3 full + half of 4th
+                slidesToShow: 3.5,
                 slidesToScroll: 1,
                 arrows: true,
                 dots: false,
@@ -556,8 +584,32 @@
                     }
                 ]
             });
-        });
 
+            // Drawer functionality
+            const hamburger = document.getElementById('hamburger');
+            const closeDrawer = document.getElementById('closeDrawer');
+            const drawerOverlay = document.getElementById('drawerOverlay');
+            const rightDrawer = document.getElementById('rightDrawer');
+
+            function toggleDrawer() {
+                hamburger.classList.toggle('active');
+                drawerOverlay.classList.toggle('active');
+                rightDrawer.classList.toggle('active');
+                document.body.style.overflow = rightDrawer.classList.contains('active') ? 'hidden' : '';
+            }
+
+            hamburger.addEventListener('click', toggleDrawer);
+            closeDrawer.addEventListener('click', toggleDrawer);
+            drawerOverlay.addEventListener('click', toggleDrawer);
+
+            // Close drawer when clicking on menu items
+            const menuItems = document.querySelectorAll('.drawer-menu a');
+            menuItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    toggleDrawer();
+                });
+            });
+        });
     </script>
 </body>
 

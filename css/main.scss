@@ -112,6 +112,17 @@ body {
 
 .humberger {
     cursor: pointer;
+    padding: 10px;
+    transition: transform 0.3s ease;
+
+    img {
+        width: 30px;
+        height: auto;
+    }
+
+    &.active {
+        transform: rotate(90deg);
+    }
 }
 
 // Header
@@ -1156,6 +1167,15 @@ body {
             margin-top: 50px;
         }
     }
+
+    .right-drawer {
+        width: 100%;
+        right: -100%;
+
+        &.active {
+            right: 0;
+        }
+    }
 }
 
 @media(max-width: 380px) {
@@ -1176,6 +1196,104 @@ body {
     @media(max-width: 480px) {
         img {
             width: 40px;
+        }
+    }
+}
+
+// Right Side Drawer Styles
+.drawer-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.right-drawer {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100%;
+    background-color: $background;
+    z-index: 1001;
+    transition: right 0.3s ease;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+
+    &.active {
+        right: 0;
+    }
+
+    .drawer-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 1px solid rgba($secondary, 0.1);
+
+        .logo img {
+            max-width: 150px;
+        }
+
+        .close-drawer {
+            cursor: pointer;
+            padding: 10px;
+
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    .drawer-content {
+        padding: 20px;
+        height: calc(100% - 80px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .drawer-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin-bottom: 15px;
+
+            a {
+                color: $secondary;
+                font-size: 18px;
+                font-weight: 500;
+                text-decoration: none;
+                display: block;
+                padding: 10px 0;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    .drawer-footer {
+        padding: 20px 0;
+        text-align: center;
+
+        .btn-mjr {
+            width: 100%;
         }
     }
 }
