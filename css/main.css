@@ -163,7 +163,7 @@ body.sticky {
 }
 .home .home-info h1 {
   font-size: 64px;
-  line-height: 44px;
+  line-height: 55px;
   font-weight: 400;
   color: #29381A;
   text-transform: uppercase;
@@ -565,9 +565,13 @@ body.sticky {
   color: #29381A;
 }
 
+#leadModal .modal-dialog {
+  max-width: 600px;
+}
 #leadModal .modal-dialog .modal-content {
   padding: 20px;
   border-radius: 20px;
+  background: #F5E9D9;
 }
 #leadModal .modal-dialog .modal-content .head {
   text-align: center;
@@ -578,61 +582,10 @@ body.sticky {
   font-weight: 400;
 }
 #leadModal .modal-dialog .modal-content .head h2 {
-  font-size: 48px;
+  font-size: 42px;
   font-family: lexend;
   font-weight: 900;
   text-transform: capitalize;
-}
-
-#anarock-form {
-  width: 400px;
-}
-#anarock-form .ap-lead-form {
-  padding: 0;
-}
-#anarock-form .ap-lead-form .am-input-container {
-  padding-left: 16px;
-  padding-top: 8px;
-  overflow: initial;
-  height: 80px;
-}
-#anarock-form .ap-lead-form .am-input-container .am-input {
-  border: 1px solid #E5E5E5;
-  height: 50px;
-  border-radius: 8px;
-}
-#anarock-form .ap-lead-form .am-input-container.phone .am-input {
-  padding-left: 16px;
-}
-#anarock-form .ap-lead-form .am-input-container.af-focussed .am-input-label, #anarock-form .ap-lead-form .am-input-container.af-valid .am-input-label {
-  top: -5px;
-  background: #fff;
-  display: inline;
-  padding: 0 5px;
-}
-#anarock-form .ap-lead-form .am-input-container .am-input {
-  padding-left: 16px;
-}
-#anarock-form .ap-lead-form .am-input-container .am-input-error {
-  top: 66px;
-  left: 0;
-}
-#anarock-form .ap-lead-form .am-input-container select#anarock-phone-phone {
-  display: none;
-}
-#anarock-form .ap-lead-form .ap-agree {
-  font-size: 14px;
-  position: absolute;
-  left: 35px;
-}
-#anarock-form .ap-lead-form .am-button {
-  background: #9B4021;
-  margin-top: 50px;
-  padding: 16px 40px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 22px;
 }
 
 .policy {

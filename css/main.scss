@@ -201,7 +201,7 @@ body {
 
         h1 {
             font-size: 64px;
-            line-height: 44px;
+            line-height: 55px;
             font-weight: 400;
             color: $secondary;
             text-transform: uppercase;
@@ -708,10 +708,14 @@ body {
 
 // Lead Modal
 #leadModal {
+
     .modal-dialog {
+        max-width: 600px;
+
         .modal-content {
             padding: 20px;
             border-radius: 20px;
+            background: $background;
 
             .head {
                 text-align: center;
@@ -723,76 +727,12 @@ body {
                 }
 
                 h2 {
-                    font-size: 48px;
+                    font-size: 42px;
                     font-family: lexend;
                     font-weight: 900;
                     text-transform: capitalize;
                 }
             }
-        }
-    }
-}
-
-#anarock-form {
-    width: 400px;
-
-    .ap-lead-form {
-        padding: 0;
-
-        .am-input-container {
-            padding-left: 16px;
-            padding-top: 8px;
-            overflow: initial;
-            height: 80px;
-
-            .am-input {
-                border: 1px solid #E5E5E5;
-                height: 50px;
-                border-radius: 8px;
-            }
-
-            &.phone .am-input {
-                padding-left: 16px;
-            }
-
-            &.af-focussed,
-            &.af-valid {
-                .am-input-label {
-                    top: -5px;
-                    background: #fff;
-                    display: inline;
-                    padding: 0 5px;
-                }
-            }
-
-            .am-input {
-                padding-left: 16px;
-            }
-
-            .am-input-error {
-                top: 66px;
-                left: 0;
-            }
-
-            select#anarock-phone-phone {
-                display: none;
-            }
-        }
-
-        .ap-agree {
-            font-size: 14px;
-            position: absolute;
-            left: 35px;
-        }
-
-        .am-button {
-            background: $primary;
-            margin-top: 50px;
-            padding: 16px 40px;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 22px;
         }
     }
 }
