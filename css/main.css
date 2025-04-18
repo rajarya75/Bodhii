@@ -636,16 +636,20 @@ body.sticky {
 }
 
 .policy {
-  padding-top: 60px;
   padding-bottom: 100px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 .policy h1 {
   font-weight: 900;
-  color: #9B4021;
+  color: #29381A;
+  text-align: center;
+  margin-bottom: 30px;
 }
 .policy h2 {
   font-weight: 600;
-  color: #9B4021;
+  font-size: 22px;
+  color: #29381A;
 }
 .policy p {
   font-size: 18px;
