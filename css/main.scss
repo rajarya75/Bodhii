@@ -711,11 +711,16 @@ body {
 
     .modal-dialog {
         max-width: 600px;
+        width: 100%;
 
         .modal-content {
             padding: 20px;
             border-radius: 20px;
             background: $background;
+
+            @media(max-width: 768px) {
+                padding: 10px 0;
+            }
 
             .head {
                 text-align: center;
@@ -733,26 +738,25 @@ body {
                     text-transform: capitalize;
                 }
             }
+
+            .form-group {
+                .form-control {
+                    background: transparent;
+                    padding: 16px;
+                    border-color: $secondary;
+                }
+
+                .btn {
+                    margin-bottom: -24px;
+                    border-radius: 7px;
+                    font-size: 22px;
+                    padding: 16px;
+                }
+            }
         }
     }
 }
 
-#contactForm {
-    .form-group {
-        .form-control {
-            background: transparent;
-            padding: 16px;
-            border-color: $secondary;
-        }
-
-        .btn {
-            margin-bottom: -24px;
-            border-radius: 7px;
-            font-size: 22px;
-            padding: 16px;
-        }
-    }
-}
 
 // Policy
 .policy {

@@ -567,11 +567,17 @@ body.sticky {
 
 #leadModal .modal-dialog {
   max-width: 600px;
+  width: 100%;
 }
 #leadModal .modal-dialog .modal-content {
   padding: 20px;
   border-radius: 20px;
   background: #F5E9D9;
+}
+@media (max-width: 768px) {
+  #leadModal .modal-dialog .modal-content {
+    padding: 10px 0;
+  }
 }
 #leadModal .modal-dialog .modal-content .head {
   text-align: center;
@@ -587,13 +593,12 @@ body.sticky {
   font-weight: 900;
   text-transform: capitalize;
 }
-
-#contactForm .form-group .form-control {
+#leadModal .modal-dialog .modal-content .form-group .form-control {
   background: transparent;
   padding: 16px;
   border-color: #29381A;
 }
-#contactForm .form-group .btn {
+#leadModal .modal-dialog .modal-content .form-group .btn {
   margin-bottom: -24px;
   border-radius: 7px;
   font-size: 22px;
