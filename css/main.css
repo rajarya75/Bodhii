@@ -72,7 +72,7 @@ body.sticky {
   color: #fff;
   text-decoration: none;
   position: fixed;
-  right: -88px;
+  right: -94px;
   top: 50%;
   transform: rotate(-90deg);
   z-index: 11;
@@ -519,6 +519,14 @@ body.sticky {
 .footer .footer-top a:hover {
   color: #F3E9DB;
 }
+.footer .footer-top .social-links ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.footer .footer-top .social-links ul li {
+  display: inline;
+  margin-right: 10px;
+}
 .footer .footer-bottom {
   border-top: 1px solid #E2E8F0;
   display: flex;
@@ -545,24 +553,41 @@ body.sticky {
 }
 
 .thankyou-page {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
-
-.thank-you {
+.thankyou-page .thank-you {
   text-align: center;
   padding-top: 240px;
 }
-.thank-you h1 {
+.thankyou-page .thank-you h1 {
   font-size: 52px;
   font-weight: 900;
   padding-top: 10px;
   padding-bottom: 5px;
   color: #29381A;
 }
-.thank-you p {
+.thankyou-page .thank-you p {
   font-size: 24px;
   color: #29381A;
+}
+@media (max-width: 768px) {
+  .thankyou-page {
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+  .thankyou-page .thank-you {
+    padding-top: 0px;
+  }
+  .thankyou-page .thank-you .box {
+    margin-top: -30px;
+    margin-bottom: 30px;
+  }
+  .thankyou-page .thank-you h1 {
+    font-size: 32px;
+  }
+  .thankyou-page .thank-you p {
+    font-size: 18px;
+  }
 }
 
 #leadModal .modal-dialog {
@@ -573,6 +598,13 @@ body.sticky {
   padding: 20px;
   border-radius: 20px;
   background: #F5E9D9;
+}
+#leadModal .modal-dialog .modal-content .closeIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   #leadModal .modal-dialog .modal-content {
@@ -603,6 +635,24 @@ body.sticky {
   border-radius: 7px;
   font-size: 22px;
   padding: 16px;
+}
+@media (max-width: 768px) {
+  #leadModal .modal-dialog .modal-content .head h2 {
+    font-size: 32px;
+  }
+  #leadModal .modal-dialog .modal-content .head p {
+    font-size: 16px;
+  }
+  #leadModal .modal-dialog .modal-content .form-group .form-control {
+    padding: 12px;
+  }
+  #leadModal .modal-dialog .modal-content .form-group textarea.form-control {
+    min-height: 80px;
+  }
+  #leadModal .modal-dialog .modal-content .form-group .btn {
+    font-size: 18px;
+    padding: 12px;
+  }
 }
 
 .policy {
@@ -677,6 +727,16 @@ body.sticky {
     margin-bottom: 0px;
     padding-top: 60px;
     padding-bottom: 70px;
+  }
+  .about-info p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .about h6 {
+    margin-bottom: 0;
+  }
+  .about h6 br {
+    display: block;
   }
   .about p {
     font-size: 14px;
@@ -1045,32 +1105,4 @@ body.sticky {
   padding: 12px;
   font-size: 16px;
   font-weight: 500;
-}
-
-.thank-you {
-  padding: 100px 0;
-  min-height: calc(100vh - 200px);
-  display: flex;
-  align-items: center;
-}
-.thank-you .thank-you-content {
-  max-width: 600px;
-  margin: 0 auto;
-}
-.thank-you .thank-you-content h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-  color: #282828;
-}
-.thank-you .thank-you-content img {
-  margin-bottom: 30px;
-}
-.thank-you .thank-you-content p {
-  font-size: 18px;
-  color: #666;
-  margin-bottom: 30px;
-}
-.thank-you .thank-you-content .btn {
-  padding: 12px 30px;
-  font-size: 16px;
 }/*# sourceMappingURL=main.css.map */
